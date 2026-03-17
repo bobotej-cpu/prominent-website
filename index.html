@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="De-Prominent Hotel & Suites – luxury hotel in abeokuta with modern rooms, fine dining, event hall, pool and excellent service. Book now!">
+<meta name="author" content="Tejohun">
+<meta property="og:title" content="De-Prominent Hotel & Suites – Luxury Awaits">
+<meta property="og:description" content="...short description...">
+<meta property="og:image" content="https://yourdomain.com/images/hero-hotel.jpg">
+<meta property="og:url" content="https://yourdomain.com">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <title>De-Prominent Hotel & Suites – Best Hotel in Abeokuta, Ogun State</title>
+  <meta name="description" content="Luxury hotel in Abeokuta with modern rooms, event hall, restaurant, and excellent service. Book now at De-Prominent Hotel & Suites, Laderin.">
+  <meta name="keywords" content="hotel in Abeokuta, hotel Laderin Abeokuta, De-Prominent Hotel, luxury hotel Ogun State, event hall Abeokuta">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<header class="navbar">
+
+  <div class="container">
+
+    <div class="brand-left">
+      <img src="images/hotel-logo.jpeg" alt="Hotel Logo" class="logo-img">
+      <span class="brand-name">DE-PROMINENT HOTEL</span>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="navMenu" class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-hotel">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#booking" class="book-now">Book Now</a>
+    </nav>
+
+  </div>
+
+</header>
+<!-- 2. Hero Section (now text-only, clean & centered) -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <!-- Replace with your large hotel image -->
+    <img src="images/hotel view2.jpg" alt="De-Prominent Hotel" class="hero-image">
+    <div class="hero-overlay"></div>
+  </div>
+  
+  <div class="container hero-content">
+    <div class="hero-text-wrapper">
+      <h1>De-Prominent Hotel & Suite</h1>
+      <p class="tagline">Luxury • Comfort • Excellence</p>
+    </div>
+  </div>
+</section>
+<!-- New: Dedicated Booking Section -->
+<section id="booking" class="section booking-section">
+  <div class="container">
+    <h2>Book Your Stay</h2>
+    <p class="booking-subtitle">Reserve your preferred room – we'll confirm availability shortly</p>
+    
+    <form id="main-booking" class="booking-form"
+     action="https://formspree.io/f/xojknjlz" 
+     method="POST">
+      <div class="form-grid">    
+        <div class="form-group">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="+234" required>
+        </div>
+        <div class="form-group">
+  <label for="email">Email Address <span class="required">*</span></label>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="example@email.com" 
+    required
+  >
+</div>
+
+        <!-- In your booking form – for both check-in and check-out -->
+<div class="form-group date-group">
+  <label for="checkin">Check-in Date <span class="required">*</span></label>
+  <div class="date-wrapper">
+    <input 
+      type="date" 
+      id="checkin" 
+      name="checkin" 
+      required
+      placeholder="Select date"
+    >
+    <span class="calendar-icon">📅</span>
+  </div>
+</div>
+
+<!-- Same for check-out -->
+<div class="form-group date-group">
+  <label for="checkout">Check-out Date <span class="required">*</span></label>
+  <div class="date-wrapper">
+    <input 
+      type="date" 
+      id="checkout" 
+      name="checkout" 
+      required
+      placeholder="Select date"
+    >
+    <span class="calendar-icon">📅</span>
+  </div>
+</div>
+        <div class="form-group">
+          <label for="guests">Number of Guests <span class="required">*</span></label>
+          <select id="guests" name="guests" required>
+            <option value="">Select number of rooms</option>
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+          </select>
+        </div>
+
+        <!-- Row 4: Room Type (full width) -->
+        <div class="form-group full-width">
+          <label for="room-type">Preferred Room Type <span class="required">*</span></label>
+          <select id="room-type" name="room-type" required>
+            <option value="">Select room type</option>
+            <option>Standard room</option>
+            <option>Deluxe Room</option>
+            <option>Executive room</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn booking-submit">Check Availability & Book</button>
+    </form>
+
+    <p class="form-note">We'll respond within minutes during business hours. Your details are secure.</p>
+  </div>
+</section>
+<section id="about-hotel" class="section about-section">
+ <div class="about-grid">
+        <div class="about-text">
+            <h3> About</h3>
+          <p>De-Prominent Hotel and Suites offers comfort, luxury, and excellent hospitality with modern rooms, delicious meals, and top-class 
+            services. Located in the heart of Abeokuta, we provide an unforgettable stay with personalized attention and world-class 
+            amenities.</p>
+            <h3>mission</h3>
+            <p>At prominent hotel and suites our mission is to provide an exceptional hospitality experience thats exceeds the expectation of our guests through personalized service, luxurious accomodations and atmosphere thats
+                creates lasting memories by combing local charm with modern amenities, fostering a culture of warmth, inclusivity and promoting sustainability.
+            </p>
+            <h3>Vision</h3>
+            <p> Our vision is to become a premier destination where guests feels at home enriched by our genuine service, sustainability
+                practices and deep connection to hospitality.
+            </p>
+          
+          </div><!-- Right column: stacked images (up and down) -->
+      <div class="about-images-stack">
+        <img src="images/hotel-receptionist (1).jpg" alt="Hotel Lobby / Exterior" class="about-img">
+        <img src="images/hotel-exe2.jpg" alt="Room or Suite Interior" class="about-img">
+        <!-- You can add more <img> tags here if needed -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Restaurant Section -->
+<section id="restaurant" class="section restaurant-section">
+  <div class="container">
+    <h2>Our Restaurant</h2>
+    <p class="section-intro">Indulge in a culinary journey at De-Prominent Restaurant, where exquisite flavors meet elegant ambiance. Using fresh, locally sourced ingredients to create memorable dining experiences for breakfast, lunch, dinner, and everything in between.</p>
+
+    <!-- Menu Highlights Grid -->
+    <div class="menu-highlights">
+      <div class="menu-card">
+        <h3>Breakfast</h3>
+        <ul>
+          <li>Continental Platter – Bread &egg & coffee</li>
+          <li>Nigerian Breakfast – Akara, Pap, Moi Moi & Tea</li>
+          <li>Delicious yam & egg</li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <h3>Lunch & Dinner</h3>
+        <ul>
+          <li>Jollof Rice with Chicken or Fish</li>
+          <li>Tasty cowtail or Pepper Soup</li>
+          <li> Local Soups (Egusi, Vegetable)</li>
+          <li>Pasta Dishes & peppered meat </li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <h3>Drinks & alchohol</h3>
+        <ul>
+          <li>Premium Wines & Champagnes</li>
+          <li>Local Beers (Heineken, Gulder, Star)</li>
+          <li>Fresh Juices & Infused Water</li>
+          <li>chilled and refreshing soft drinks</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Restaurant Gallery / Images -->
+    <div class="restaurant-gallery">
+      <h3>Restaurant</h3>
+      <div class="gallery-grid">
+        <!-- Replace src with your actual restaurant photos -->
+        <div class="gallery-item">
+          <img src="images/hotel-restaurant3.jpg" alt="Elegant dining area at De-Prominent Restaurant">
+          <div class="overlay">Main Dining Room</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hotel-restaurant.jpg" alt="Luxurious table setting with purple accents">
+          <div class="overlay">Fine Dining Setup</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hotel-chiller2(1).jpg" alt="Stylish hotel bar lounge">
+          <div class="overlay">Drinks & Wine</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hotel-bar-night - Copy (2).jpeg" alt="Exquisite plated meal">
+          <div class="overlay">Bar & longe</div>
+        </div>
+          <div class="gallery-item">
+          <img src="images/hotel-peppersoup.jpg" alt="Exquisite plated meal">
+          <div class="overlay">Signature Dish</div>
+        
+        </div>
+          <div class="gallery-item">
+          <img src="images/hotel-snooker(1).jpg" alt="Exquisite plated meal">
+          <div class="overlay">Snooker board</div>
+         </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Standard Hall Section -->
+<section id="standard-hall" class="section hall-section">
+  <div class="container">
+    <h2>Standard Hall</h2>
+    <p class="hall-intro">Our versatile Standard Hall is perfect for conferences, seminars, weddings, receptions, corporate events, and private celebrations. Equipped with  flexible seating arrangements, and professional event support, it comfortably accommodates up to 50+ guests depending on setup.</p>
+
+    <div class="hall-gallery">
+      <!-- Image 1 -->
+      <div class="hall-item">
+        <img src="images/hotel-hall-blue.png" alt="Standard Hall set up for conference or seminar">
+        <div class="hall-caption">Event Setup</div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="hall-item">
+        <img src="images/hotel-hall-pink.jpg" alt="Standard Hall decorated for wedding or reception">
+        <div class="hall-caption">Wedding & Reception Setup</div>
+      </div>
+    </div>
+
+    <div class="cta-center">
+      <!-- Enquire About Events – Opens WhatsApp with pre-filled hall enquiry -->
+<a href="https://wa.me/2349077052566?text=Hello%20De-Prominent%20Hotel%2C%20I%20want%20to%20enquire%20about%20booking%20the%20Standard%20Hall%20for%20an%20event.%20Please%20send%20details%20(availability%2C%20capacity%2C%20pricing%2C%20and%20photos).%20Thank%20you!" 
+   class="btn" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  Enquire About Events
+</a>
+    </div>
+  </div>
+</section>
+</section>
+   <section id="rooms" class="section rooms">
+  <div class="container">
+    <h2>Our Rooms</h2>
+    <div class="rooms-grid">
+      <div class="room-card" style="background-image: url('images/hotel-standard.jpeg');">
+        <div class="room-text-overlay">
+    <h3>Standard Room</h3>
+    <p class="price">₦25,000 / Night</p>
+    <p>Free WiFi • wardrobe</p>
+    <a href="#booking" class="btn small">Book Now</a>
+  </div>
+      </div>
+
+      <div class="room-card" style="background-image: url('images/hotel-ig-room.png');">
+        <div class="room-text-overlay">
+          <h3>Deluxe Room</h3>
+          <p class="price">₦30,000 / Night</p>
+          <p>Free wifi • waterheater • Table & chair</p>
+          <a href="#booking" class="btn small">Book Now</a>
+        </div> 
+      </div>
+
+      <div class="room-card" style="background-image: url('images/hotel-\ exe1\(1\).jpg');">
+        <div class="room-text-overlay">
+          <h3>Executive Room</h3>
+          <p class="price">₦35,000 / Night</p>
+          <p>King Bed • Mini fridge • Smart Tv • Exclusive Amenities</p>
+          <a href="#booking" class="btn small">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 6. Facilities Section -->
+  <section id="facilities" class="section facilities">
+    <div class="container">
+      <h2>Our Facilities</h2>
+      <div class="facilities-grid">
+        <div class="facility"><i class="fas fa-wifi"></i><span>Free WiFi</span></div>
+        <div class="facility"><i class="fas fa-parking"></i><span>Secure Parking</span></div>
+        <div class="facility"><i class="fas fa-glass-martini-alt"></i><span>Bar & Lounge</span></div>
+        <div class="facility"><i class="fas fa-shield-alt"></i><span>24/7 Security</span></div>
+        <div class="facility"><i class="fas fa-tshirt"></i><span>Laundry Service</span></div>
+        <div class="facility">
+        <i class="fas fa-chalkboard-teacher"></i>  <!-- or fa-users-class, fa-door-open, fa-hotel -->
+        <span>Standard Hall</span>
+      </div>
+    </div>
+  
+  </section>
+
+  <!-- 7. Gallery Section -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Each item now has a wrapper + overlay -->
+      <div class="gallery-item">
+        <img src="images/hotel-ig-room3.png" alt="Room">
+        <div class="gallery-overlay">
+          <p>Luxurious Guest Room</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/hotel-restaurant3(1).jpg" alt="Restaurant">
+        <div class="gallery-overlay">
+          <p>Fine Dining Restaurant</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/hotel-bar-entrance(1).jpg" alt="Bar">
+        <div class="gallery-overlay">
+          <p>Elegant Bar & Lounge</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/hotel-ig-frontview.png" alt="Hotel Building">
+        <div class="gallery-overlay">
+          <p>Hotel Exterior</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/hotel-receptio  stairview1(1).jpg" alt="Reception">
+        <div class="gallery-overlay">
+          <p>Modern Reception Area</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/hotel-snooker2(1).jpg" alt="Pool / Facility">
+        <div class="gallery-overlay">
+          <p>Standard Snooker board</p>
+        </div>
+      </div>
+
+      <!-- Add more if you want – same pattern -->
+      <div class="gallery-item">
+        <img src="images/hotel-hall-blue.png" alt="Reception">
+        <div class="gallery-overlay">
+          <p>Spacious Conference Hall</p>
+        </div>
+       </div>
+        <div class="gallery-item">
+        <img src="images/hotel-hallway3(1).jpg" alt="Reception">
+        <div class="gallery-overlay">
+          <p>Modern Decorated Hall</p>
+        </div>
+       </div>
+        <div class="gallery-item">
+        <img src="images/hotel view (1).jpg" alt="Reception">
+        <div class="gallery-overlay">
+          <p>Hotel Building</p>
+        </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+  <!-- New: Why Choose De-Prominent (replaces testimonials) -->
+<section id="why-choose" class="section why-choose">
+  <div class="container">
+    <h2>Why Choose us</h2>
+    <p class="section-intro">Experience hospitality redefined — where every detail is crafted for your comfort, privacy, and delight.</p>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-bed"></i></div>
+        <h3>Unmatched Comfort</h3>
+        <p>Plush bedding, premium linens, and thoughtful touches that make you feel instantly at home.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Exceptional Dining</h3>
+        <p>Fresh, locally inspired dining space — from signature Jollof to fine wines, served in elegant surroundings.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-spa"></i></div>
+        <h3>Wellness & Relaxation</h3>
+        <p>Fully eqiupped bar and lounge, snooker board , table tenis game, and serene spaces designed for true escape.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Security & Privacy</h3>
+        <p>24/7 discreet security, private check-in options, and personalized service that respects your space and preferences.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-users"></i></div>
+        <h3>Personalized Service</h3>
+        <p>Attentive staff who anticipate your needs, multilingual support, and tailored experiences for business or leisure.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Sustainable Luxury</h3>
+        <p>Eco-conscious practices, local sourcing, and responsible operations without compromising elegance or comfort.</p>
+      </div>
+      <div class="feature-item">
+  <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+  <h3>Versatile Event Spaces</h3>
+  <p>Our Standard Hall provides flexible, well-equipped space for weddings, corporate events, seminars, and celebrations.</p>
+</div>
+
+    </div>
+  </div>
+</section>
+  <!-- 9. Contact Section -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-columns">
+      <!-- LEFT COLUMN: Info + Map -->
+      <div class="contact-left">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> NO.1 PROMINENT ROAD,<br>WORKING ESTATE EXTENSION,<br>LADERIN, ABEOKUTA, OGUN STATE.</p>
+          <p><i class="fas fa-phone"></i> +234 902 594 2374</p>
+          <p><i class="fas fa-phone"></i> +234 907 705 2566</p>
+          <p><i class="fas fa-envelope"></i> prominenthotelandsuites2@gmail.com</p>
+        </div>
+
+        <!-- Google Maps -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0662673990623!2d3.3715897739450997!3d7.118319392885367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4b004b8a66c1%3A0xb7cfcf574a29262b!2sProminent%20Hotels%20%26%20Suites!5e0!3m2!1sen!2sng!4v1773072954649!5m2!1sen!2sng"
+          width="100%"
+          height="350"
+          style="border:0; border-radius:12px; margin-top:1.5rem;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <p style="font-size:0.9rem; color:#777; text-align:center; margin-top:1rem;">
+          Your information is secure and used only to respond to your enquiry.
+        </p>
+      </div>
+
+      <!-- RIGHT COLUMN: Form -->
+      <div class="contact-right">
+        <form 
+          id="contact-form" 
+          action="https://formspree.io/f/xjgayykg"  
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+          <!-- Hidden fields -->
+          <input type="hidden" name="_subject" value="New Contact Message from Website">
+          <input type="hidden" name="_replyto" value="{{email}}">
+
+          <button type="submit" class="btn">Send Message</button>
+
+          <div id="form-status" style="margin-top: 1.2rem; font-weight: bold; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- 10. Footer -->
+  <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <h3>De-Prominent Hotel & Suite</h3>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-hotel">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons with real links -->
+    <div class="social">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/18VzrferWg/" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/hotel_0064" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- WhatsApp (opens chat) -->
+      <a href="https://wa.me/2349077052566?text=Hello%20De-Prominent%20Hotel%2C%20I'd%20like%20to%20make%20a%20booking%20or%20enquiry" 
+         target="_blank" rel="noopener noreferrer" title="Message us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.tiktok.com/@de_prominenthotel?_r=1&_d=f1695al3i1m5df&sec_uid=MS4wLjABAAAA4EvruKmLqwtjWK6OE6IIDah3tk2wpVwlQ4KDRSE-_rMWYkrl1CQeUzwvVkLt8KGF&share_author_id=7588560758032761863&sharer_language=en&source=h5_m&u_code=f16962ck7d5gc1&utm_source=whatsapp&utm_campaign=client_share&share_link_id=7d3b2a7b-f494-4cab-a68c-6bc4fda6992c&share_app_id=1340&ugbiz_name=Account&lang=en&user_id=7588560758032761863&sec_user_id=MS4wLjABAAAA4EvruKmLqwtjWK6OE6IIDah3tk2wpVwlQ4KDRSE-_rMWYkrl1CQeUzwvVkLt8KGF" target="_blank" rel="noopener noreferrer" title="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+    </div>
+
+    <p class="copyright">© 2026 De-Prominent Hotel & Suite. All Rights Reserved.</p>
+    <a href="https://wa.me/2349077052566" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+  </div>
+</footer>
+  <script src="java script/script.js">
+
+  </script>
+</body>
+</html>
